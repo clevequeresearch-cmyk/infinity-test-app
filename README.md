@@ -80,12 +80,13 @@ If you use the Infinity Test Nomogram in a scientific publication, please cite:
 BibTeX:
 
 ```bibtex
-@software{leveque2025_infinitytest,
-  author       = {Leveque, Cl{\'e}ment},
-  title        = {Infinity Test Nomogram -- Version 1},
-  version      = {V1.0},
-  year         = {2025},
+@software{infinitytest_v1_1,
+  author       = {clevequeresearch-cmyk},
+  title        = {Infinity Test Nomogram — Version 1.1 (DOI + QR code update)},
+  month        = nov,
+  year         = 2025,
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.17718092},
-  url          = {https://doi.org/10.5281/zenodo.17718092}
+  version      = {v1.1},
+  doi          = {10.5281/zenodo.17718602},
+  url          = {https://doi.org/10.5281/zenodo.17718602}
 }
