@@ -1,6 +1,6 @@
 # Infinity Test Nomogram
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17718092.svg)](https://doi.org/10.5281/zenodo.17718092)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17718602.svg)](https://doi.org/10.5281/zenodo.17718602)
 
 Field-based web application to estimate **VO₂∞**, **equivalent power** and **maximal aerobic speed (MAS)** from a 3-minute all-out wheelchair *Infinity Test*.
 
