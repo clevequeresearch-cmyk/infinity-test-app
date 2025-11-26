@@ -120,7 +120,32 @@
     .btn-secondary { background:#e0e0e0; color:#333; }
     .btn:disabled { opacity:0.5; cursor:default; }
     footer { margin-top:1.2rem; font-size:0.75rem; color:var(--text-muted); text-align:center; }
-  </style>
+  
+
+  .doi-line {
+    font-size: 0.85rem;
+    color: #444;
+    margin-top: 0.2rem;
+  }
+  .doi-line a {
+    color: #0f766e;
+    text-decoration: none;
+  }
+  .doi-line a:hover {
+    text-decoration: underline;
+  }
+
+  .footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
+  }
+  .footer a {
+    color: #0f766e;
+  }
+
+</style>
 </head>
 <body>
 
@@ -131,6 +156,7 @@
     <div class="app-header-text">
       <h1>Infinity Test Nomogram</h1>
       <p>Field-based estimation of VO₂peak, equivalent power and MAS from laps per minute</p>
+      <p class="doi-line">Archived software (Version 1.0): <a href="https://doi.org/10.5281/zenodo.17718092" target="_blank" rel="noopener">10.5281/zenodo.17718092</a></p>
     </div>
   </header>
   <div class="layout">
@@ -748,6 +774,31 @@ function openPdfReport() {
         grid-template-columns: 1fr;
       }
     }
+
+
+    .report-doi-block {
+      margin-top: 0.15cm;
+      margin-bottom: 0.4cm;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.4cm;
+    }
+    .report-doi {
+      font-size: 9px;
+    }
+    .report-doi a {
+      color: #0f766e;
+      text-decoration: none;
+    }
+    .report-doi a:hover {
+      text-decoration: underline;
+    }
+    .report-qr img {
+      width: 55px;
+      height: 55px;
+    }
+
 </style>
 </head>
 <body>
@@ -759,6 +810,7 @@ function openPdfReport() {
       <div class="report-header-text">
         <h1>Infinity Test – Individual Report</h1>
         <p>Field-based estimation of VO₂∞, equivalent power and MAS from a 3-minute all-out wheelchair test</p>
+        <div class="report-doi-block"><div class="report-doi"><strong>Software archived (Version 1.0):</strong> <a href="https://doi.org/10.5281/zenodo.17718092" target="_blank">10.5281/zenodo.17718092</a></div><div class="report-qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXIAAAFyAQAAAADAX2ykAAACoElEQVR4nO2bUWrjQAyGP+0Y8jiGPUCPYt+s7JH2Bp6j9AABz2PA5t+HGTtJu2Vb1nUdkB6SEH8PPwhJI41s4jOWfnwKB+edd9555513/j3eqjWYWQOpna086PPyrN9Rj/Mb850kaQRpnA3ySZDNgCBJ0j3/1Xqc34hv6nduofsNEIV1mg0IE2Sw8msXPc5/LW/WAqkNknRZsvL36XF+Y74bZysfyU5vm+PD63f+zpb8HAVkIBmQLMiI53LIuvXy0fQ7/yE+mVlJzd0YRDcC3ctJwFyOz/vqcX4jvsTv2zw8G6nF9PrZ0fQ7/xHeemqvu7S+QRCnm8C2fkc9zm/FU5vbOCFpAgjSECc0RNVMDdQWeTiafuc/wmvIDdbnU3Go9UB1bZyKa3fV4/zGfPFgvBgwWzlkpRaAoOu48rD6nX/PrsNHaQyCKLHWXw1RkjQVzvPzo/HVv6W4RpXSSzeu7ibU1Oz195H5bAa5wZ7X1Jxa0ABoWJ18WP3O/91q/5uepsY6gcgtEEeA2SCejXrdsIce57fl63yyG5GRf05AmAzAiCO25mfto8f5bfn1fLVc85Yyy5KV75skr7+PyUu6GMmW24ZOyyGrOPnl5PX3sfl8qv1vamezPjeYPU2U0K2N8Z56nN+GLxFrELDupUHkBqU2TAZzjefUjrJ99Di/LV/nFqst/01Lal5qstffB+av+5PFkjXYc9m0a7gpzAfV7/y7dnNq1hh0HVK+il+fTz40n+uGs1k7m4Yy2rgYya53wnvqcf5r+FqEc1P3c9bAtv5b9Di/MZ+swfo41fnzr5ayxPFdepz/L/7N/mSZNZd2+Gx049yIeF64o+l3/h92+/JJGUiGeuE7xOWlhbq94+erx+PN3+923nnnnXfe+d35Px1PjdnaJqpbAAAAAElFTkSuQmCC" alt="DOI QR code"></div></div>
       </div>
     </div>
 
@@ -838,5 +890,11 @@ function openPdfReport() {
 }
 
 </script>
+
+  <footer class="footer">
+    Infinity Test Nomogram – Version 1.0 ·
+    DOI: <a href="https://doi.org/10.5281/zenodo.17718092" target="_blank">10.5281/zenodo.17718092</a>
+  </footer>
+
 </body>
 </html>
